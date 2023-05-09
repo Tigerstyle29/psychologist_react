@@ -1,0 +1,9 @@
+.social {
+    display: flex;
+    gap: 7px;
+}
+
+.social_el:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

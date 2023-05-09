@@ -1,0 +1,30 @@
+.picture {
+    position: relative;
+    border-radius: 0px 0px 30px 300px;
+}
+.social-tg {
+    display: inline-block;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    background-color: #6C5D95;
+    margin-right: 10px;
+    padding: 5px;
+}
+.social-vk {
+    display: inline-block;
+    position: absolute;
+    bottom: 10%;
+    left: 55%;
+    background-color: #6C5D95;
+    margin-right: 10px;
+    padding: 5px;
+}
+.social-yt {
+    display: inline-block;
+    position: absolute;
+    bottom: 10%;
+    left: 60%;
+    background-color: #6C5D95;
+    padding: 5px;
+}

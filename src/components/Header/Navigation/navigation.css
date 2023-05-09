@@ -1,0 +1,25 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+    margin-right: 7%;
+    gap: 20px; 
+    color: #FFFFFF;
+    font-family: 'Noto Sans',Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0,5px;
+}
+.nav_line {
+    border-right: #FFFFFF solid 1px; 
+    width: 6px;
+    height: 19px;
+}
+.nav_el:hover {
+    color: #609f89;
+    cursor: pointer;
+    /* text-decoration: underline; */
+}
