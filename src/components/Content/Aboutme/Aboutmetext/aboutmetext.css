@@ -1,0 +1,18 @@
+.aboutmetext {
+    position: relative;
+    width: 50%;
+    top: -900px;
+    right: -50%;
+    color: white;
+}
+.aboutmetext_h2 {
+    font-size: 35px;
+}
+.aboutmetext_p1 {
+    width: 80%;
+}
+.aboutmetext_p2 {
+    position: relative;
+    width: 60%;
+    right: -10%;
+}

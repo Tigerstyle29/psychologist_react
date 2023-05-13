@@ -8,7 +8,7 @@ const Aboutmepicture = () => {
         <div className='aboutmepic'>
             <img src={polygon4Svg} className='triangle_4'
                 alt='треугольник_1'
-                width="575px"
+                width="40%"
                 height="575px" /> 
             <img src={polygon5Svg} className='triangle_5'
                 alt='треугольник_2'
@@ -16,8 +16,8 @@ const Aboutmepicture = () => {
                 height="1000px" /> 
             <img src={psySvg} className='psy'
                 alt='психолог'
-                width="500px"
-                height="740px" />                
+                width="400px"
+                height="500px" />                
         </div>
     )
 }
