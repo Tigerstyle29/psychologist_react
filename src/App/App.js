@@ -2,8 +2,6 @@
 import Header from '../components/Header/Header'
 import Info from '../components/Content/Info/Info'
 import Aboutme from '../components/Content/Aboutme/Aboutme'
-// styles
-import './app.css'
 
 function App() {
   return (

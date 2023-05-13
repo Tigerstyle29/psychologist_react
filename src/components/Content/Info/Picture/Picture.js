@@ -1,8 +1,8 @@
 import './picture.css'
-import psyJpg from '../../../../assets/info/psy.jpg'
-import telegramSvg from '../../../../assets/info/telegram.svg'
-import vkSvg from '../../../../assets/info/vk.svg'
-import youtubeSvg from '../../../../assets/info/youtube.svg'
+import psyJpg from '@src/assets/greeting/psy.jpg'
+import telegramSvg from '@src/assets/greeting/telegram.svg'
+import vkSvg from '@src/assets/greeting/vk.svg'
+import youtubeSvg from '@src/assets/greeting/youtube.svg'
 
 
 
