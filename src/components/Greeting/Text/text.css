@@ -1,0 +1,53 @@
+.information {
+    border: 1px blue dashed;
+}
+
+.information-h1 {
+    font-family: 'Noto Sans',Arial,sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #6C5D95;
+    margin: 65px 0 0 0;
+    letter-spacing: 1px;
+}
+
+.information-h2 {
+    font-family: 'Noto Sans',Arial,sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 0,5px;
+    margin: 0;
+}
+
+.information-p {
+    font-family: 'Noto Sans',Arial,sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #4F4F4F;
+    width: 545px;
+    letter-spacing: 0,7px;
+    margin: 40px 0 60px 0;
+}
+
+.info-button {
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Noto Sans',Arial,sans-serif;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-weight: 700;
+    border-width: 15px 90px;
+    background-color: #609f89;
+    border-color: transparent;
+}
+
+.information-p2 {
+    font-family: 'Noto Sans',Arial,sans-serif;
+    color: #4F4F4F;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0,7px;
+    margin: 25px 0 0 0;
+}

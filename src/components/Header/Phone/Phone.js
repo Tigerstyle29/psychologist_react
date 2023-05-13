@@ -1,5 +1,5 @@
 import './phone.css'
-import phoneSvg from '../../../assets/header/phone.svg'
+import phoneSvg from '@assets/header/phone.svg'
 
 const Phone = () => {
 

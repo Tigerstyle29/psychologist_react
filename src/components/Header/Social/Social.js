@@ -1,7 +1,7 @@
 import './social.css'
-import vkSvg from '../../../assets/header/vk.svg'
-import tgSvg from '../../../assets/header/tg.svg'
-import ytSvg from '../../../assets/header/yt.svg'
+import vkSvg from '@assets/header/vk.svg'
+import tgSvg from '@assets/header/tg.svg'
+import ytSvg from '@assets/header/yt.svg'
 
 function Social() {
     return (
