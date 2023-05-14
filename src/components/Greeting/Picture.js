@@ -17,7 +17,7 @@ const Picture = () => {
                 alt='greeting.jpg'
             /> 
 
-            <SocialsList>
+            {/* <SocialsList>
                 <a href='https://t.me/psyhologist_antipov'>  
                     <img 
                         src={telegramSvg} 
@@ -44,19 +44,23 @@ const Picture = () => {
                         height="48px" 
                     />   
                 </a>               
-            </SocialsList> 
+            </SocialsList>  */}
 
         </Wrapper>
     )
 }
 
 const Wrapper = styled.div`
-    border: 1px dashed red;
+    max-width: 53%;
+
+    border: 1px green dashed; /* TODO: убрать после завершения работы над элементом */
 `
 
 const Img = styled.img`
-    border-radius: 0px 0px 30px 300px;
-    max-height: 500px;
+    border-radius: 0 0 5% 30% ;
+    height: auto;
+    width: 100%;
+    transform: translateY(-5px);
 `
 
 const SocialsList = styled.div`
