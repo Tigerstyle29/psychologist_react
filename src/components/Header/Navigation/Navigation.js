@@ -2,36 +2,60 @@ import styled from 'styled-components'
 // icons for mobile
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 // hook 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 // TODO: Примерно на 870px (разрешение) сделать бургер меню
 const Navigation = () => {
-    const [nav, setNav] = useState(false);
+
+    const [navOpen, setNavOpen] = useState(false); // true | false
+
+    const navHandler = () => {
+        console.log('click')
+        setNavOpen(!navOpen)
+    }
+
+    // useEffect(() => {
+    //     console.log('navOpen', navOpen)
+    // }, [navOpen])
+
+    // className={ navOpen ? [NavList, active].join(' ') : [NavList] } 
+
     return (
-        <NavList>
-            { nav ? [NavList, active].join(' ') : [NavList] } 
-            <NavEl>Обо мне</NavEl>
-            <Line/>
+        <>
+            <NavList 
+                navOpen={navOpen}
+            >
+                <NavEl>Обо мне</NavEl>
+                <Line/>
+                <NavEl>Услуги и цены</NavEl>
+                <Line/>
+                <NavEl>Запись на консультацию</NavEl>
+                <Line/>
+                <NavEl>Частые вопросы</NavEl>
+                <Line/>
+                <NavEl>Блог</NavEl>
+            </NavList>
 
-            <NavEl>Услуги и цены</NavEl>
-            <Line/>
 
-            <NavEl>Запись на консультацию</NavEl>
-            <Line/>
+            <ButtonStyled onClick={navHandler}>
+                {navOpen ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25}/>}
+            </ButtonStyled>
 
-            <NavEl>Частые вопросы</NavEl>
-            <Line/>
-
-            <NavEl>Блог</NavEl>
-            
-            <AiOutlineMenuStyled size={25} onClick={() => setNav(!nav)}>  
-                {nav ? <AiOutlineClose size={25} /> : <AiOutlineMenu/>}
-            </AiOutlineMenuStyled>
-            
-        </NavList>
+                {/* 
+                    if(navOpen === true) {
+                        return <AiOutlineClose size={25} />
+                    } else {
+                        <AiOutlineMenu size={25}/>
+                    } 
+                */}
+        </>
     )
 }
-const NavList = styled.div`
+const NavList = styled.div.attrs(props => ({
+    style: {
+        top: props.navOpen ? '0px' : '101vh',
+    }
+}))`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,7 +64,6 @@ const NavList = styled.div`
     font-size: 16px;
 
     @media (max-width: 870px) {
-        display: flex;
         flex-direction: column;
         position: fixed;
         left: 0;
@@ -55,9 +78,6 @@ const NavList = styled.div`
         z-index: 10;
         transition: left 1s;
     }
-        &.active {
-              left: 0;
-          }
 ` 
 
 const Line = styled.span`
@@ -78,10 +98,12 @@ const NavEl = styled.p`
 `
 // бургер меню 
 
-const AiOutlineMenuStyled = styled(AiOutlineMenu)`
+const ButtonStyled = styled.button`
     display: none;
     
     @media  (max-width: 870px) {
+        background-color: rgba(0,0,0,0);
+        border: none;
         display: block;
         position: absolute;
         right: 10px;
