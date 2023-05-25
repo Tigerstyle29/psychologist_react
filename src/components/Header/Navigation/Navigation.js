@@ -23,7 +23,7 @@ const Navigation = () => {
     return (
         <>
             <NavList 
-                navOpen={navOpen}
+                open={navOpen}
             >
                 <NavEl>Обо мне</NavEl>
                 <Line/>
@@ -53,7 +53,7 @@ const Navigation = () => {
 }
 const NavList = styled.div.attrs(props => ({
     style: {
-        top: props.navOpen ? '0px' : '101vh',
+        top: props.open ? '0px' : '101vh',
     }
 }))`
     display: flex;
