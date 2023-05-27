@@ -13,6 +13,7 @@ const Header = () => {
                 <Navigation />
                 <Phone />
                 <Social />
+                <div></div>
             </HeaderStyled>
         </Background>
     )
