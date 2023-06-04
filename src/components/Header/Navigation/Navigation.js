@@ -41,7 +41,7 @@ const Navigation = () => {
         </NavList>
 
         <ButtonStyled onClick={navHandler}>
-            {navOpen ? <AiOutlineClose size={25} /> : <AiOutlineMenu size={25}/>}
+            {navOpen ? <AiOutlineClose size={25} color='black'/> : <AiOutlineMenu size={25} color='white'/>}
         </ButtonStyled>
 
             {/*

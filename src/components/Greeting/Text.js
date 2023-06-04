@@ -20,6 +20,10 @@ const Wrapper = styled.div`
     justify-content: center;
     align-items: flex-start;
     max-width: 43%;
+    @media (max-width: 870px ) {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
 `
 
 const Title = styled.h1`
@@ -30,7 +34,7 @@ const Title = styled.h1`
     border: 1px red dashed; /* TODO: убрать после завершения работы над элементом */
     
     /*
-        TODO: адаптиввный текст изучить принцип работы и 
+        TODO: адаптивный текст изучить принцип работы и 
         посмотреть какие бывают метрики 
         для размеров (px, vw, vh, em, rem, %, deg, ... ) 
     */

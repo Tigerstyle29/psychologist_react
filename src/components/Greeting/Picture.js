@@ -17,34 +17,42 @@ const Picture = () => {
                 alt='greeting.jpg'
             /> 
 
-            {/* <SocialsList>
-                <a href='https://t.me/psyhologist_antipov'>  
-                    <img 
-                        src={telegramSvg} 
-                        alt="tg" 
-                        width="48px"
-                        height="48px" 
-                    />  
-                </a>
+            <SocialsList>
 
-                <a href='https://vk.com/ksenobeerg'>  
-                    <img
-                        src={vkSvg}
-                        alt="vk"
-                        width="48px"
-                        height="48px"
-                    />
-                </a>
+                <SocialsElements1>
+                    <a href='https://t.me/psyhologist_antipov'>  
+                        <img 
+                            src={telegramSvg} 
+                            alt="tg" 
+                            width="48px"
+                            height="48px" 
+                        />  
+                    </a>
+                </SocialsElements1>
 
-                <a href='https://youtube.com/@igor_psyhologist_antipov'>
-                    <img 
-                        src={youtubeSvg} 
-                        alt="youtube" 
-                        width="48px"
-                        height="48px" 
-                    />   
-                </a>               
-            </SocialsList>  */}
+                <SocialsElements2>
+                    <a href='https://vk.com/ksenobeerg'>  
+                        <img
+                            src={vkSvg}
+                            alt="vk"
+                            width="48px"
+                            height="48px"
+                        />
+                    </a>
+                </SocialsElements2>
+
+                <SocialsElements3>
+                    <a href='https://youtube.com/@igor_psyhologist_antipov'>
+                        <img 
+                            src={youtubeSvg} 
+                            alt="youtube" 
+                            width="48px"
+                            height="48px" 
+                        />   
+                    </a>         
+                </SocialsElements3>  
+                       
+            </SocialsList>  
 
         </Wrapper>
     )
@@ -57,6 +65,7 @@ const Wrapper = styled.div`
 `
 
 const Img = styled.img`
+    
     border-radius: 0 0 5% 30% ;
     height: auto;
     width: 100%;
@@ -65,10 +74,21 @@ const Img = styled.img`
 
 const SocialsList = styled.div`
     border: 1px dashed green;
+    position: relative;
+    bottom: 15%;
+    display: flex;
 `
-
-
-
+const SocialsElements1 = styled.div`
+    background-color: #6C5D95;
+    margin-right: 10px;
+`
+const SocialsElements2 = styled.div`
+    background-color: #6C5D95;
+    margin-right: 10px;
+`
+const SocialsElements3  = styled.div`
+    background-color: #6C5D95;
+`
 // .social-tg {
 //     display: inline-block;
 //     position: absolute;

@@ -37,8 +37,10 @@ const Text = () => {
 // TODO: разобрать background стили
 const Background = styled.div`
     background-image: url(${props => props.backgroundUrl});
-    background-repeat: no-repeat;
+    // картинка на заднем фоне не повторяется
+    background-repeat: no-repeat; 
     background-position: center;
+    // растягивает изображение по ширине и высоте на 100%
     background-size: cover;
 `
 
