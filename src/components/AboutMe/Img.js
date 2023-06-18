@@ -1,7 +1,8 @@
 // img
-import greenTriangle from '@src/assets/aboutme/greenTriangle.svg'
-import purpleTriangle from '@src/assets/aboutme/purpleTriangle.svg'
-import psyPhoto from '@src/assets/aboutme/psy.png'
+import trianglePsy from '@src/assets/aboutme/trianglePsy.png'
+// mobile
+import green from '@assets/aboutme/green.png'
+import purple from '@assets/aboutme/purple.png'
 // styled
 import styled from 'styled-components'
 
@@ -9,46 +10,48 @@ import styled from 'styled-components'
 const Img = () => {
     return (
         <Wrapper>
-            {/* <GreenImg
-                src={greenTriangle}
-                alt='треугольник_1'
-                width="40%"
-                height="575px"
-            />  */}
-            {/* <PurpleImg
-                src={purpleTriangle}
-                alt='треугольник_2'
-                width="60%"
-                height="1000px"
+            <Psytriangles
+                src={trianglePsy}
+                alt='Психолог'
+                width="100%"
+                height="100%"
             /> 
-            <PsyImg
-                src={psyPhoto}
-                className='psy'
-                alt='психолог'
-                width="400px"
-                height="500px"
-            />                 */}
+            <Greentriangle
+                src={green}
+                alt="псих"
+                width="100%"
+                height="100%" />
+            <Purpletriangle
+                src={purple}
+                alt="фиолетовый треугольник"
+                width="100%"
+                heigh="100%" />           
         </Wrapper>
     )
 }
 
 const Wrapper = styled.div`
-    display: flex;
-    width: 100%;
-    height: 100%;
+`
+const Psytriangles = styled.img`
+    @media (max-width: 870px) {
+        display: none;
+    }
 `
 
-const GreenImg = styled.img`
-    position: relative;
+const Greentriangle = styled.img`
+    display: none;
+
+    @media (max-width: 870px) {
+        display: flex;
+    }
 `
 
-const PurpleImg = styled.img``
+const Purpletriangle = styled.img`
+    display: none;
 
-const PsyImg = styled.img`
-    position: relative;
-    left: -93%;
-    top: 50px;
+    @media (max-width: 870px) {
+        display: flex;
+    }
 `
-
 
 export default Img
