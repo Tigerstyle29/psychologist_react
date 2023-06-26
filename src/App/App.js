@@ -13,7 +13,8 @@ import { styled } from 'styled-components';
 function App() {
     return (
         <>
-            <Header />
+            {/* TODO: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
+            {/* <Header /> */}
             <Content>
                 <Greeting />
                 <AboutMe />
