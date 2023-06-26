@@ -17,7 +17,7 @@ function App() {
             <Content>
                 <Greeting />
                 <AboutMe />
-                {/* <Guarantee /> */}
+                <Guarantee />
             </Content>
             {/* <Footer /> */}
         </>

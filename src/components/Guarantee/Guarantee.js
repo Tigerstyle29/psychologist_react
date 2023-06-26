@@ -1,18 +1,22 @@
-import Zagolovok from './Zagolovok/Zag'
-import Elements from './Elements/Elements'
+import Zagolovok from '@components/Guarantee/Zagolovok/Zag'
+import Elements from '@components/Guarantee/Elements/Elements'
 
-import './guarantee.css'
+import styled from 'styled-components'
 
 const Guarantee = () => {
     return (
-        <div className='guarantee_background'>
-            <div className='guarantee'>
-                <Zagolovok />
-                <Elements />
-            </div>
-        </div>
+        <Background>
+            <Zagolovok />
+            <Elements /> 
+        </Background>
     )
 }
+
+const Background = styled.div`
+    width: 100%;
+    height: 100%;
+    background-color: #F5F2FC;
+`
 
 export default Guarantee
 
