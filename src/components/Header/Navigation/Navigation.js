@@ -22,23 +22,23 @@ const Navigation = () => {
 
     return (
         <>
-        <NavList
-            open={navOpen}
-        > 
-            <NavEl>Обо мне</NavEl>
-            <Line/>
+            <NavList
+                open={navOpen}
+            > 
+                <NavEl>Обо мне</NavEl>
+                <Line/>
 
-            <NavEl>Услуги и цены</NavEl>
-            <Line/>
+                <NavEl>Услуги и цены</NavEl>
+                <Line/>
 
-            <NavEl>Запись на консультацию</NavEl>
-            <Line/>
+                <NavEl>Запись на консультацию</NavEl>
+                <Line/>
 
-            <NavEl>Частые вопросы</NavEl>
-            <Line/>
+                <NavEl>Частые вопросы</NavEl>
+                <Line/>
 
-            <NavEl>Блог</NavEl>
-        </NavList>
+                <NavEl>Блог</NavEl>
+            </NavList>
 
         <ButtonStyled onClick={navHandler}>
             {navOpen ? <AiOutlineClose size={25} color='black'/> : <AiOutlineMenu size={25} color='white'/>}
@@ -68,7 +68,6 @@ const NavList = styled.div.attrs(props => ({
     font-size: 16px;
 
     @media (max-width: 870px) {
-
         flex-direction: column;
         position: fixed;
         left: 0;
@@ -88,7 +87,7 @@ const NavList = styled.div.attrs(props => ({
 const Line = styled.span`
     border-right: #FFFFFF solid 1px; 
     height: 25%;
-    margin: 0 15px;
+    /* margin: 0 15px; */
 
     @media (max-width: 870px) {
         display: none;

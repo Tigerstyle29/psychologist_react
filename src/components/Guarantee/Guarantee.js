@@ -1,13 +1,13 @@
-import Zagolovok from '@components/Guarantee/Zagolovok/Zag'
-import Elements from '@components/Guarantee/Elements/Elements'
+import Zag from './elements/Zag'
+import Cards from './elements/Cards'
 
 import styled from 'styled-components'
 
 const Guarantee = () => {
     return (
         <Background>
-            <Zagolovok />
-            <Elements /> 
+            <Zag />
+            <Cards /> 
         </Background>
     )
 }

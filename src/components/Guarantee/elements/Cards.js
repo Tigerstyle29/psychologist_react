@@ -3,10 +3,72 @@ import heartSvg from '@assets/guarantee/heart.svg'
 import loveSvg from '@assets/guarantee/love.svg'
 import angrySvg from '@assets/guarantee/angry.svg'
 import handsSvg from '@assets/guarantee/hands.svg'  
+import Card from '@components/UI/Card'
 // styles
 import styled from 'styled-components'
 
-function Elements() {
+const cardsArr = [
+    {   
+        id: 1,
+        img: heartSvg,
+        alt: 'heart',
+        text: 'Конфиденциальность и безопасность'
+    },
+    {   
+        id: 2,
+        img: loveSvg,
+        alt: 'love',
+        text: 'Принятие и поддержка'
+    }, 
+    {   
+        id: 3,
+        img: angrySvg,
+        alt: 'heart',
+        text: 'Безоценочное восприятие',
+    },
+    {   
+        id: 4,
+        img: handsSvg,
+        alt: 'hands',
+        text: 'Компетентность',
+    }
+]
+
+function Cards() {
+    return (
+        <Wrapper>
+            <CardsStyled>
+                {/* с помощьб .map() перебрал каждый элемент (el) и отрисовал для каждого компонент Card */}
+                {/* лучше использовать el вместо props, тут показано для лучшего понимания */}
+                {cardsArr.map(props => {
+                    return (
+                        <Card 
+                            key={props.id}
+                            img={props.img}
+                            alt={props.alt}
+                            text={props.text}
+                        />
+                    )
+                })}
+            </CardsStyled>
+        </Wrapper>
+    )
+}
+
+const Wrapper = styled.div`
+    width: 100%;
+`
+
+const CardsStyled = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+`
+export default Cards
+
+
+// Тигран делал так:
+/*function Cards() {
     return (
         <Wrapper>
             <El>
@@ -62,25 +124,4 @@ function Elements() {
         </Wrapper>
     )
 }
-
-const Wrapper = styled.div`
-    width: 100%;
-`
-
-const El = styled.div`
-    display: flex;
-    justify-content: space-evenly;
-`
-
-const Element = styled.div`
-    display: flex;
-    flex-direction: column;	
-    justify-content: center;
-    align-items: center;
-    width: 20%;
-    height: 20%;
-`
-const Text = styled.p`
-`
-
-export default Elements
+*/
