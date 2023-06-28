@@ -1,6 +1,5 @@
 import Zag from './elements/Zag'
 import Cards from './elements/Cards'
-
 import styled from 'styled-components'
 
 const Guarantee = () => {

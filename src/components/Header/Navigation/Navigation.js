@@ -40,17 +40,17 @@ const Navigation = () => {
                 <NavEl>Блог</NavEl>
             </NavList>
 
-        <ButtonStyled onClick={navHandler}>
-            {navOpen ? <AiOutlineClose size={25} color='black'/> : <AiOutlineMenu size={25} color='white'/>}
-        </ButtonStyled>
+            <ButtonStyled onClick={navHandler}>
+                {navOpen ? <AiOutlineClose size={25} color='black'/> : <AiOutlineMenu size={25} color='white'/>}
+            </ButtonStyled>
 
-            {/*
-                if(navOpen === true) {
-                    return <AiOutlineClose size={25} />
-                } else {
-                    <AiOutlineMenu size={25}/>
-                }
-            }*/}
+                {/*
+                    if(navOpen === true) {
+                        return <AiOutlineClose size={25} />
+                    } else {
+                        <AiOutlineMenu size={25}/>
+                    }
+                }*/}
         </>
     )
 }

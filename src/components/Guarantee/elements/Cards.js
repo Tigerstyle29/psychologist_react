@@ -67,7 +67,8 @@ const CardsStyled = styled.div`
 export default Cards
 
 
-// Тигран делал так:
+// Тигран делал так
+
 /*function Cards() {
     return (
         <Wrapper>
