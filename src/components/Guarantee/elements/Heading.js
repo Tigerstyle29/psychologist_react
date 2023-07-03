@@ -1,7 +1,7 @@
 // styles
 import styled from 'styled-components'
 
-function Zag() {
+function Heading() {
     return (
         <Wrapper>
             <Title>В работе со мной гарантировано</Title>
@@ -22,4 +22,4 @@ const Title = styled.h2`
     margin: 0 0 0 0;
 `
 
-export default Zag
+export default Heading

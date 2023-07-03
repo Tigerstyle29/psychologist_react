@@ -47,6 +47,9 @@ const Title = styled.h1`
 const PsyName = styled.h2`
     font-size: 60px;
     margin: 0;
+    @media (max-width: 1920px) {
+        font-size: calc(20px + 1.8vw);
+    }
 `
 
 const Info = styled.p`
@@ -54,6 +57,9 @@ const Info = styled.p`
     line-height: 30px;
     color: #4F4F4F;
     margin: 40px 0 0;
+    @media (max-width: 1920px) {
+        margin: 15px 0 0;
+    }
 `
 
 const Button = styled.button`
@@ -66,6 +72,9 @@ const Button = styled.button`
     background-color: #609f89;
     border-color: transparent;
     margin: 60px 0 0;
+    @media (max-width: 1920px) {
+        margin: 25px 0 0; 
+    }
 `
 
 const FreeConsult = styled.p`
@@ -74,6 +83,9 @@ const FreeConsult = styled.p`
     font-weight: 400;
     letter-spacing: 0,7px;
     margin: 25px 0 0 0;
+    @media (max-width: 1920px) {
+        margin: 10px 0 0;
+    }
 `
 
 

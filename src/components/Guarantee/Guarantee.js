@@ -1,11 +1,11 @@
-import Zag from './elements/Zag'
+import Heading from './elements/Heading'
 import Cards from './elements/Cards'
 import styled from 'styled-components'
 
 const Guarantee = () => {
     return (
         <Background>
-            <Zag />
+            <Heading />
             <Cards /> 
         </Background>
     )
