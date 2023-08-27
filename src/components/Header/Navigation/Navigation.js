@@ -87,7 +87,7 @@ const NavList = styled.div.attrs(props => ({
 const Line = styled.span`
     border-right: #FFFFFF solid 1px; 
     height: 25%;
-    /* margin: 0 15px; */
+    margin: 0 15px; 
 
     @media (max-width: 870px) {
         display: none;
