@@ -44,12 +44,15 @@ function Elements() {
 }
 
 const Wrapper = styled.div`
-    width: 100%;
+    width: auto;
 `
 const ElementsStyled = styled.div`
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 25%;
+    max-inline-size: 1140px;
+    margin-inline: auto;
 `
 
 export default Elements

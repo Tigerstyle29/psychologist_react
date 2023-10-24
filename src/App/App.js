@@ -4,6 +4,7 @@ import Greeting from '@components/Greeting'
 import AboutMe from '@components/AboutMe'
 import Guarantee from '@components/Guarantee/Guarantee'
 import Help from '@components/Help/Help'
+import Rate from '@components/Rate/Rate'
 import { styled } from 'styled-components';
 
 
@@ -15,12 +16,13 @@ function App() {
     return (
         <>
             {/* TODO: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
-           { /* <Header /> */ }
+           { /*<Header /> */ }
             <Content>
                 <Greeting />
                 <AboutMe />
                 <Guarantee />
                 <Help />
+                <Rate />
             </Content>
             {/* <Footer /> */}
         </>
