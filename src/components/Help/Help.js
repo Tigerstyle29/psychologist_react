@@ -1,4 +1,4 @@
-import Elements from "./Elements"
+import Cards from "./Cards"
 import Heading from "./Heading"
 // styles
 import styled from 'styled-components'
@@ -6,8 +6,8 @@ import styled from 'styled-components'
 const Help = () => {
     return (
         <Background>
-                <Heading />
-                <Elements />
+            <Heading />
+            <Cards />
         </Background>
     )
 }

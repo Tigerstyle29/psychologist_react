@@ -1,8 +1,9 @@
 import Element from '@components/UI/Element'
 // styled
 import styled from 'styled-components'
+import HelpCard from "./HelpCard";
 
-const elementsArr = [
+const cards = [
     {
         id: 1,
         heading: 'Самооценка',
@@ -25,34 +26,22 @@ const elementsArr = [
     },
 ]
 
-function Elements() {
+
+
+// TODO: ПЕРЕИМЕНОВАТЬ ВСЕ СТРЕМНЫЕ НАЗВАНИЯ!
+function Cards() {
     return (
-        <Wrapper>
-            <ElementsStyled>
-                {elementsArr.map(props => {
-                    return (
-                        <Element 
-                            key={props.id}
-                            heading={props.heading}
-                            text={props.text}
-                        />
-                    )
-                })}
-            </ElementsStyled>
-        </Wrapper>
+        <CardsWrapper>
+            {cards.map(card => <HelpCard card={card}/>)}
+        </CardsWrapper>
     )
 }
 
-const Wrapper = styled.div`
-    width: auto;
-`
-const ElementsStyled = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 25%;
-    max-inline-size: 1140px;
-    margin-inline: auto;
+const CardsWrapper = styled.div`
+  margin: 0 10%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 `
 
-export default Elements
+export default Cards
