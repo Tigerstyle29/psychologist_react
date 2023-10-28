@@ -3,7 +3,7 @@ import heartSvg from '@assets/guarantee/heart.svg'
 import loveSvg from '@assets/guarantee/love.svg'
 import angrySvg from '@assets/guarantee/angry.svg'
 import handsSvg from '@assets/guarantee/hands.svg'  
-import Card from '@components/UI/Card'
+import Card from './garantCard'
 // styles
 import styled from 'styled-components'
 
@@ -38,7 +38,7 @@ function Cards() {
     return (
         <Wrapper>
             <CardsStyled>
-                {/* с помощью .map() перебрал каждый элемент (el) и отрисовал для каждого компонент Card */}
+                {/* с помощью .map() перебрал каждый элемент (el) и отрисовал для каждого компонент HelpCard.js */}
                 {/* лучше использовать el вместо props, тут показано для лучшего понимания */}
                 {cardsArr.map(props => {
                     return (

@@ -1,10 +1,10 @@
 import React from "react"
 import styled from 'styled-components'
 
-function Ulcard(props) {
-    const {heading, title, text, button} = props
+function RateCard({card}) {
+    const {heading, title, text, button, id} = card
     return (
-        <Wrapper>
+        <Wrapper key={id}>
             <El>
                 <Heading>
                     {heading}
@@ -37,4 +37,4 @@ const Text = styled.p`
 const Button = styled.button`
 `
 
-export default Ulcard
+export default RateCard

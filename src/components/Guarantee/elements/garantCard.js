@@ -4,7 +4,7 @@ import styled from 'styled-components'
 // // props = {img, alt, text}
 // // через деструктуризацию
 // // тоже самое что и 3 вариант
-// function Card({img, alt, text}) {
+// function HelpCard.js({img, alt, text}) {
 //     return (
 //         <Wrapper>
 //             <Img
@@ -19,7 +19,7 @@ import styled from 'styled-components'
 // }
 
 // // 2 вариант написания:
-// function Card(props) {
+// function HelpCard.js(props) {
 //     return (
 //         <Wrapper>
 //             <Img

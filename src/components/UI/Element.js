@@ -1,6 +1,9 @@
 import React from "react"
 import styled from 'styled-components'
 
+// TODO: ПЕРЕИМЕНОВАТЬ ВСЕ СТРЕМНЫЕ НАЗВАНИЯ!
+// TODO: ВЫНЕСТИ В СВОЙ КОМПОНЕНТ
+
 function Element(props) {
     const {heading, text} = props
     return (
