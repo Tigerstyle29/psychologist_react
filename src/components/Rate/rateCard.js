@@ -24,17 +24,47 @@ function RateCard({card}) {
 }
 
 const Wrapper = styled.div`
-    max-width: 1440px;
 `
+
 const El = styled.div`
+    width: 280px;
+    height: 450px;
+    background-color: #FFFFFF;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 30px;
+    margin-right: 20px;
 `
 const Heading = styled.h2`
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
 `
-const Title = styled.h2`
+const Title = styled.h3`
+    width: 80%;
+    background-color: #6C5D95;
+    color: #FFFFFF;
+    padding: 7px;
+    font-size: 22px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
 `
 const Text = styled.p`
+    font-size: 15px;
+    margin-bottom: 10px;
+    white-space: pre-line;
 `
 const Button = styled.button`
+    width: 180px;
+    height: 40px;
+    background-color: #609F89;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 800;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
 `
 
 export default RateCard

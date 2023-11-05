@@ -9,18 +9,18 @@ const cardArray = [
         id: 1,
         heading: 'Тариф',
         title: 'Первое знакомство',
-        text: '1 встреча',
+        text: '1 встреча\n\nСпециальный тариф для новых клиентов\n\nПознакомимся и наметим план проработки\n\n\nЦена: Бесплатно',
         button: 'Записаться'
     },{
         id: 2,
         heading: 'Тариф',
-        title: 'Первое знакомство',
-        text: '1 встреча',
+        title: 'Стресс',
+        text: '3 встречи',
         button: 'Записаться'
     },{
         id: 3,
         heading: 'Тариф',
-        title: 'Первое знакомство',
+        title: 'Кризис',
         text: '1 встреча',
         button: 'Записаться'
     },
@@ -48,8 +48,9 @@ const Title = styled.h2`
 `
 
 const CardWrapper = styled.div`
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 480px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 const Background = styled.div`
