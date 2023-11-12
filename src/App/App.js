@@ -6,6 +6,7 @@ import Guarantee from '@components/Guarantee/Guarantee'
 import Help from '@components/Help/Help'
 import Rate from '@components/Rate/Rate'
 import { styled } from 'styled-components';
+import Appointment from '../components/Appointment/Appointment'
 
 
 /**
@@ -23,6 +24,8 @@ function App() {
                 <Guarantee />
                 <Help />
                 <Rate />
+                <Appointment />
+               {/* <Accordion /> */}
             </Content>
             {/* <Footer /> */}
         </>

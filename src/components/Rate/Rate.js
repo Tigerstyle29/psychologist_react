@@ -15,13 +15,13 @@ const cardArray = [
         id: 2,
         heading: 'Тариф',
         title: 'Стресс',
-        text: '3 встречи',
+        text: '3 встречи\n\nДля тех, кто понимает, что нужен\n комплексный подход\n\nГлубокая проработка кризисной ситуации\n\nЦена: 1500 руб/1 час',
         button: 'Записаться'
     },{
         id: 3,
         heading: 'Тариф',
         title: 'Кризис',
-        text: '1 встреча',
+        text: '5 встреч\n\nДля тех, кто понимает, что нужен\n комплексный подход\n\nГлубокая проработка кризисной ситуации\n\nЦена: 1500 руб/1 час',
         button: 'Записаться'
     },
 ]
@@ -49,8 +49,11 @@ const Title = styled.h2`
 
 const CardWrapper = styled.div`
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap; /* Карточки будут переноситься на новую строку при нехватке места */
+    padding: 20px; /* Добавил отступы для улучшения визуального восприятия */
 `
 
 const Background = styled.div`

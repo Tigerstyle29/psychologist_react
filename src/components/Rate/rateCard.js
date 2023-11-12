@@ -24,10 +24,15 @@ function RateCard({card}) {
 }
 
 const Wrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px; /* Добавил отступ снизу для улучшения визуального восприятия */
 `
 
 const El = styled.div`
     width: 280px;
+    max-width: 100%; /* Чтобы карточка не выходила за границы экрана на маленьких устройствах */
     height: 450px;
     background-color: #FFFFFF;
     border: 1px solid #ccc;
@@ -50,11 +55,13 @@ const Title = styled.h3`
     font-weight: bold;
     margin-bottom: 5px;
 `
+
 const Text = styled.p`
     font-size: 15px;
     margin-bottom: 10px;
     white-space: pre-line;
 `
+
 const Button = styled.button`
     width: 180px;
     height: 40px;
