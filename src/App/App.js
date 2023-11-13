@@ -7,7 +7,7 @@ import Help from '@components/Help/Help'
 import Rate from '@components/Rate/Rate'
 import { styled } from 'styled-components';
 import Appointment from '../components/Appointment/Appointment'
-
+import Accordion from '../components/Accordion/Accordion'
 
 /**
  * TODO: восстановить компонент только после полного 
@@ -25,7 +25,7 @@ function App() {
                 <Help />
                 <Rate />
                 <Appointment />
-               {/* <Accordion /> */}
+                <Accordion />
             </Content>
             {/* <Footer /> */}
         </>

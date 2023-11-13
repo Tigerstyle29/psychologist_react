@@ -27,7 +27,7 @@ const Appointment = () => {
 }
 
 const AppointmentSection = styled.section`
-    background-color: #F5F2FC;
+    background-color: #E6E2F0;
     padding: 40px;
     text-align: center;
 `
