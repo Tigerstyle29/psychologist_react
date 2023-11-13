@@ -13,7 +13,7 @@ const Wrapper = styled.div`
 `
 
 const Title = styled.h2`
-    Сdisplay: flex;
+    display: flex;
     justify-content: center;
     font-weight: 500;
     font-size: 48px;
