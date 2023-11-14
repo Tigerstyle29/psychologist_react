@@ -142,5 +142,4 @@ const ArrowIcon = styled.span`
   font-size: 18px;
 `
 
-
 export default FAQAccordion;
