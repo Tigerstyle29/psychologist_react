@@ -25,19 +25,19 @@ const Navigation = () => {
             <NavList
                 open={navOpen}
             > 
-                <NavEl>Обо мне</NavEl>
+                <NavEl href="#about">Обо мне</NavEl>
                 <Line/>
 
-                <NavEl>Услуги и цены</NavEl>
+                <NavEl href="#services">Услуги и цены</NavEl>
                 <Line/>
 
-                <NavEl>Запись на консультацию</NavEl>
+                <NavEl href="#consultation">Запись на консультацию</NavEl>
                 <Line/>
 
-                <NavEl>Частые вопросы</NavEl>
+                <NavEl href="#faq">Частые вопросы</NavEl>
                 <Line/>
 
-                <NavEl>Блог</NavEl>
+                <NavEl href="#blog">Блог</NavEl>
             </NavList>
 
             <ButtonStyled onClick={navHandler}>
@@ -94,12 +94,17 @@ const Line = styled.span`
     }
 `
 
-const NavEl = styled.p`
+const NavEl = styled.a`
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 16px;
+
     &:hover {
         color: #609f89;
         cursor: pointer;
     }
 `
+
 // бургер меню 
 
 const ButtonStyled = styled.button`

@@ -28,7 +28,7 @@ const cardArray = [
 
 const Rate = () => {
     return (
-        <Background>
+        <Background id="services">
             <Title>Тарифы</Title>
             <CardWrapper>
                 {cardArray.map(card=> <RateCard card={card}/>)}

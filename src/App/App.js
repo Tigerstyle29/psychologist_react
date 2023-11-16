@@ -18,7 +18,7 @@ function App() {
     return (
         <>
             {/* TODO: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */}
-           { /*<Header /> */ }
+            <Header /> 
             <Content>
                 <Greeting />
                 <AboutMe />

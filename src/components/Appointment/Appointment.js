@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Appointment = () => {
   return (
-    <AppointmentSection>
+    <AppointmentSection id="consultation">
       <Title>Как записаться на консультацию</Title>
       <AppointmentInfo>
         <Step>

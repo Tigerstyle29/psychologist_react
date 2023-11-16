@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 const AboutMe = () => {
     return (
-        <Background>
+        <Background id="about">
             <Img />
         </Background>
     )
