@@ -15,9 +15,11 @@ function RateCard({card}) {
                 <Text>
                     {text}
                 </Text>
-                <Button>
-                    {button}
-                </Button>
+                <ButtonWrapper>
+                    <Button>
+                        {button}
+                    </Button>
+                </ButtonWrapper>    
             </El>
         </Wrapper>
     )
@@ -61,16 +63,21 @@ const Text = styled.p`
     margin-bottom: 10px;
     white-space: pre-line;
 `
+const ButtonWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+    margin-top: 50px; 
+`
 
 const Button = styled.button`
-    width: 180px;
-    height: 40px;
+    width: 200px;
+    height: 50px;
     background-color: #609F89;
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 800;
     border: none;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
 `
 
