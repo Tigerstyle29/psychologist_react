@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 // hook 
 import {useState, useEffect} from 'react'
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 // TODO: Примерно на 870px (разрешение) сделать бургер меню
 const Navigation = () => {
@@ -25,19 +26,19 @@ const Navigation = () => {
             <NavList
                 open={navOpen}
             > 
-                <NavEl href="#about">Обо мне</NavEl>
+                <NavEl to="about" smooth={true} duration={500} spy={true} offset={-70}>Обо мне</NavEl>
                 <Line/>
 
-                <NavEl href="#services">Услуги и цены</NavEl>
+                <NavEl to="services" smooth={true} duration={500} spy={true} offset={-70}>Услуги и цены</NavEl>
                 <Line/>
 
-                <NavEl href="#consultation">Запись на консультацию</NavEl>
+                <NavEl to="consultation" smooth={true} duration={500} spy={true} offset={-70}>Запись на консультацию</NavEl>
                 <Line/>
 
-                <NavEl href="#faq">Частые вопросы</NavEl>
+                <NavEl to="faq" smooth={true} duration={500} spy={true} offset={-70}>Частые вопросы</NavEl>
                 <Line/>
 
-                <NavEl href="#blog">Блог</NavEl>
+                <NavEl>Блог</NavEl>
             </NavList>
 
             <ButtonStyled onClick={navHandler}>
@@ -94,7 +95,7 @@ const Line = styled.span`
     }
 `
 
-const NavEl = styled.a`
+const NavEl = styled(Link)`
     text-decoration: none;
     color: #FFFFFF;
     font-size: 16px;
