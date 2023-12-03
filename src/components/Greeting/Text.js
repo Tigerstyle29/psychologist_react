@@ -31,7 +31,7 @@ const Title = styled.h1`
     color: #6C5D95;
     margin: 0;
 
-    border: 1px red dashed; /* TODO: убрать после завершения работы над элементом */
+    /* border: 1px red dashed;  TODO: убрать после завершения работы над элементом */
     
     /*
         TODO: адаптивный текст изучить принцип работы и 

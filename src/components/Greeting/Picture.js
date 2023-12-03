@@ -61,7 +61,7 @@ const Picture = () => {
 const Wrapper = styled.div`
     max-width: 53%;
 
-    // border: 1px green dashed; /* TODO: убрать после завершения работы над элементом */
+    /* border: 1px green dashed;  TODO: убрать после завершения работы над элементом */
 `
 
 const Img = styled.img`
@@ -73,7 +73,7 @@ const Img = styled.img`
 `
 
 const SocialsList = styled.div`
-    border: 1px dashed green;
+    /* border: 1px dashed green; */
     position: relative;
     bottom: 15%;
     display: flex;
