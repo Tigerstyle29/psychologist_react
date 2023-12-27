@@ -1,63 +1,51 @@
-import styled from 'styled-components'
-// icons for mobile
-import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
-// hook 
-import {useState, useEffect} from 'react'
-import { Link, animateScroll as scroll } from 'react-scroll';
+import styled from 'styled-components';
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { useState } from 'react';
 
-// TODO: Примерно на 870px (разрешение) сделать бургер меню
 const Navigation = () => {
-
-    const [navOpen, setNavOpen] = useState(false); // true | false
+    const [navOpen, setNavOpen] = useState(false);
 
     const navHandler = () => {
-        console.log('click')
-        setNavOpen(!navOpen)
-    }
+        setNavOpen(!navOpen);
+    };
 
-    // useEffect(() {
-    //    console.log('navOpen', navOpen)
-    //}, [navOpen])
+    const closeNav = () => {
+        setNavOpen(false);
+    };
 
-    // className={ navOpen ? [NavList, active].join(' ') : [NavList] }
+    const scrollToElement = (elementId) => {
+        const element = document.getElementById(elementId);
+        if (element) {
+            const yOffset = -70;
+            const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+            closeNav();
+        }
+    };
 
     return (
         <>
-            <NavList
-                open={navOpen}
-            > 
-                <NavEl to="about" smooth={true} duration={500} spy={true} offset={-70}>Обо мне</NavEl>
-                <Line/>
-
-                <NavEl to="services" smooth={true} duration={500} spy={true} offset={-70}>Услуги и цены</NavEl>
-                <Line/>
-
-                <NavEl to="consultation" smooth={true} duration={500} spy={true} offset={-70}>Запись на консультацию</NavEl>
-                <Line/>
-
-                <NavEl to="faq" smooth={true} duration={500} spy={true} offset={-70}>Частые вопросы</NavEl>
-                <Line/>
-
-                <NavEl>Блог</NavEl>
+            <NavList open={navOpen}>
+                <NavEl onClick={() => scrollToElement("about")}>Обо мне</NavEl>
+                <Line />
+                <NavEl onClick={() => scrollToElement("services")}>Услуги и цены</NavEl>
+                <Line />
+                <NavEl onClick={() => scrollToElement("consultation")}>Запись на консультацию</NavEl>
+                <Line />
+                <NavEl onClick={() => scrollToElement("faq")}>Частые вопросы</NavEl>
+                <Line />
+                <NavEl onClick={closeNav}>Блог</NavEl>
             </NavList>
 
             <ButtonStyled onClick={navHandler}>
-                {navOpen ? <AiOutlineClose size={25} color='black'/> : <AiOutlineMenu size={25} color='white'/>}
+                {navOpen ? <AiOutlineClose size={25} color='black' /> : <AiOutlineMenu size={25} color='white' />}
             </ButtonStyled>
-
-                {/*
-                    if(navOpen === true) {
-                        return <AiOutlineClose size={25} />
-                    } else {
-                        <AiOutlineMenu size={25}/>
-                    }
-                }*/}
         </>
-    )
-}
+    );
+};
+
 const NavList = styled.div.attrs(props => ({
     style: {
-        top: props.navOpen ? '0px' : '101vh',
         top: props.open ? '0px' : '101vh',
     }
 }))`
@@ -76,43 +64,40 @@ const NavList = styled.div.attrs(props => ({
         top: 0;
         bottom: 0;
         width: 100%;
-        // высота на все окно 
         height: 100vh;
         color: black;
         background-color: #f8f8f8;
         z-index: 10;
         transition: left 1s;
     }
-` 
+`;
 
 const Line = styled.span`
-    border-right: #FFFFFF solid 1px; 
+    border-right: #FFFFFF solid 1px;
     height: 25%;
-    margin: 0 15px; 
+    margin: 0 15px;
 
     @media (max-width: 870px) {
         display: none;
     }
-`
+`;
 
-const NavEl = styled(Link)`
+const NavEl = styled.div`
     text-decoration: none;
-    color: #FFFFFF;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
 
     &:hover {
         color: #609f89;
-        cursor: pointer;
     }
-`
-
-// бургер меню 
+`;
 
 const ButtonStyled = styled.button`
     display: none;
     
-    @media  (max-width: 870px) {
-        background-color: rgba(0,0,0,0);
+    @media (max-width: 870px) {
+        background-color: rgba(0, 0, 0, 0);
         border: none;
         display: block;
         position: absolute;
@@ -121,6 +106,6 @@ const ButtonStyled = styled.button`
         cursor: pointer;
         z-index: 10;
     }
-`
+`;
 
-export default Navigation
+export default Navigation;

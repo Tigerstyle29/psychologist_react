@@ -20,6 +20,11 @@ const Title = styled.h2`
     line-height: 55px;
     padding: 80px 0 50px 0;
     margin: 0 0 0 0;
+
+    @media (max-width: 870px) {
+        text-align: center;
+    }
 `
+
 
 export default Heading
