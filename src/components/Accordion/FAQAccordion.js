@@ -37,7 +37,7 @@ const FAQAccordion = () => {
     <>
       <AccordionContainer>
         <TitleContainer onClick={toggleAccordion1}>
-          <Title>На какой платформе проходят занятия?</Title>
+          <Title>На какой платформе проходят встречи</Title>
           <ArrowIcon>{isOpen1 ? '-' : '+'}</ArrowIcon>
         </TitleContainer>
         {isOpen1 && (
@@ -49,7 +49,7 @@ const FAQAccordion = () => {
 
       <AccordionContainer>
         <TitleContainer onClick={toggleAccordion2}>
-          <Title>Сколько длится одно занятие?</Title>
+          <Title>Сколько длится один сеанс</Title>
           <ArrowIcon>{isOpen2 ? '-' : '+'}</ArrowIcon>
         </TitleContainer>
         {isOpen2 && (
@@ -61,12 +61,12 @@ const FAQAccordion = () => {
 
       <AccordionContainer>
         <TitleContainer onClick={toggleAccordion3}>
-          <Title>Какая минимальная продолжительность курса?</Title>
+          <Title>Какие методики используются на сеансах?</Title>
           <ArrowIcon>{isOpen3 ? '-' : '+'}</ArrowIcon>
         </TitleContainer>
         {isOpen3 && (
           <ContentContainer>
-            <p>Рассчитывайте на 10 сессий. Этого хватит, чтобы снять острое состояние.</p>
+            <p>На сеансах мы применяем разнообразные методики, подходящие под индивидуальные потребности каждого клиента.</p>
           </ContentContainer>
         )}
       </AccordionContainer>

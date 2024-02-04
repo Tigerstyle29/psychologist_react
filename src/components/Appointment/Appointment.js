@@ -7,11 +7,11 @@ const Appointment = () => {
       <AppointmentInfo>
         <Step>
           <StepNumber>1</StepNumber>
-          <StepText>Выберите удобное время и дату для консультации.</StepText>
+          <StepText>Подберите удобное время и дату для консультации.</StepText>
         </Step>
         <Step>
           <StepNumber>2</StepNumber>
-          <StepText>Заполните форму заявки на сайте, указав ваши контактные данные.</StepText>
+          <StepText>Выберите удобную форму обратной связи на сайте.</StepText>
         </Step>
         <Step>
           <StepNumber>3</StepNumber>
